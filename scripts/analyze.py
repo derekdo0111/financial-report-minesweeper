@@ -229,6 +229,8 @@ def check_regulatory(symbol):
             capture_output=True, text=True, timeout=30,
             cwd=os.path.dirname(NEODATA_SCRIPT)
         )
+        if not result.stdout.strip():
+            return False, None
         data = json.loads(result.stdout)
         
         # 检查是否有"风险与监管事件提醒"类型
