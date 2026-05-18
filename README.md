@@ -1,0 +1,2 @@
+# financial-report-minesweeper
+根据唐朝老师的手把手教你读财报为基础生成的财报排雷小工具
